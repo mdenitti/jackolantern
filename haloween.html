@@ -14,24 +14,49 @@
 <body>
     <table>
         <tr>
-            <td rowspan="4">x</td>
-            <td>x</td>
-            <td>x</td>
+            <td rowspan="4"><h1>haloween inschrijving</h1>
+            <img src="jackolantern.png" width="200px">
+            </td>
+            <td><input type="text" id="lastname" placeholder="lastname"></td>
+            <td><input type="text" id="firstname" placeholder="firstname"></td>
         </tr>
         <tr>
-            <td>x</td>
-            <td>x</td>
+            <td><input type="text" id="email" placeholder="email"></td>
+            <td><input type="text" id="phone" placeholder="phone"></td>
         </tr>
         <tr>
-            <td>x</td>
-            <td>x</td>
+            <td><input type="number" id="amount" placeholder="amount"></td>
+            <td>
+              <!--   radio buttons for selection of 20h or 21h -->
+                <h3>Selecteer de tijd</h3>
+                <input type="radio" id="20h" name="time" value="20">
+                <label for="20h">20h</label>
+                <input type="radio" id="21h" name="time" value="21">
+                <label for="21h">21h</label>
+            </td>
         </tr>
         <tr>
-            <td colspan="2">x</td>
+            <td colspan="2">
+                <h3>Extra's voor the smullen</h3>
+               <!--  3 checkboxen met de volgende opties: soup, broodje, jenever -->
+                <input type="checkbox" id="soup" name="soup">
+                <label for="soup">soup</label>
+                <input type="checkbox" id="broodje" name="broodje">
+                <label for="broodje">broodje</label>
+                <input type="checkbox" id="jenever" name="jenever">
+                <label for="jenever">jenever</label>
+            </td>
         </tr>
         <tr>
-            <td>x</td>
-            <td colspan="2">x</td>
+            <td>
+                <h4>Algemene voorwaarden</h4>
+                <input type="checkbox" id="alg" name="alg" checked>
+                <label for="alg">Ik ga akoord</label>
+            </td>
+            <td colspan="2">
+               <!--  <input type="submit" value="Submit"> -->
+                <button>Submit</button>
+            </td>
         </tr>
     </table>
 </body>
