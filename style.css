@@ -2,3 +2,10 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+a.navlink {
+    color: white;
+    text-decoration: none;
+    background: orange;
+    padding: 10px;
+}
