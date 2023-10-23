@@ -1,5 +1,9 @@
+html {
+    background: rgb(167,54,29);
+    background: linear-gradient(168deg, rgba(167,54,29,1) 0%, rgba(240,147,66,1) 71%);
+}
+
 body {
-    background-color: #000;
     color: #fff;
 }
 
@@ -9,6 +13,30 @@ a.navlink {
     background: orange;
     padding: 10px;
 }
+
+a.navlink:hover {
+    background: black;
+}
+
+/* input#lastname:focus {
+    focus is used to highlight the input box
+    when starting to type... (pseudo class)
+
+    background-color: blueviolet;
+    color: white;
+} */
+input {
+    padding: 12px;
+    border: orange;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+input::placeholder {
+    color: orange;
+  }
 
 td.cross {
    height: 3em;
@@ -20,4 +48,13 @@ td.cross {
 .white {
     background-color: white;
     
+}
+
+nav {
+    margin-bottom: 32px;
+}
+
+
+h1.haloween {
+    color: #faebd733;
 }
