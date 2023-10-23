@@ -6,6 +6,7 @@
     <title>Haloweentochtinschrijvingsformulier</title>
    <!--  external stylesheet... most common style implementation ever -->
    <link rel="stylesheet" href="style.css">
+   
     <style>
         td {
             /* Internal style sheet, bij adding a style tag;
@@ -14,16 +15,14 @@
             padding: 20px;
              */
         }
-        h1 {
-            color:blue
-        }
+        
         
     </style>
 </head>
 <!-- inline style, used to override the blue from the internal style -->
  
 <body>
-    <h1 style="color:orange">HaloWeeN Walk 2.0</h1>
+    <h1 class="title">HaloWeeN Walk 2.0</h1>
     <nav>
         <a class="navlink" href="index.html">Home</a>
         <a class="navlink" href="about.html">Over onze wandeling</a>
@@ -33,7 +32,7 @@
     <table>
         <tr>
             <td rowspan="4"><h1 class="haloween">haloween inschrijving</h1>
-            <img src="jackolantern.png" alt="logo of jackolantern" width="300px">
+            <img class="jackolantern" src="jackolantern.png" alt="logo of jackolantern">
             </td>
             <td><input type="text" id="lastname" placeholder="lastname"></td>
             <td><input type="text" id="firstname" placeholder="firstname"></td>
@@ -46,18 +45,23 @@
             <td><input type="number" id="amount" placeholder="amount"></td>
             <td>
               <!--   radio buttons for selection of 20h or 21h -->
-                <h3>Selecteer de tijd</h3>
-                <input type="radio" id="20h" name="time" value="20">
-                <label for="20h"><b>20h</b></label>
-                <input type="radio" id="21h" name="time" value="21">
-                <label for="21h">21h</label>
+                <div class="time">
 
-                <h4>Zijn jullie snel bang?</h4>
-                <select name="scared" id="scared">
-                    <option>maak een keuze</option>
-                    <option value="ja">Ja zeker, heel snel bang</option>
-                    <option value="nee">Neen, niets kan ons doen verschrikken</option>
-                </select>
+                    <h3>Selecteer de tijd</h3>
+                    <input type="radio" id="20h" name="time" value="20">
+                    <label for="20h"><b>20h</b></label>
+                    <input type="radio" id="21h" name="time" value="21">
+                    <label for="21h">21h</label>
+    
+                    <h4>Zijn jullie snel bang?</h4>
+                    <select name="scared" id="scared">
+                        <option>maak een keuze</option>
+                        <option value="ja">Ja zeker, heel snel bang</option>
+                        <option value="nee">Neen, niets kan ons doen verschrikken</option>
+                    </select>
+
+                </div>
+
             </td>
         </tr>
         <tr>
@@ -80,7 +84,7 @@
             </td>
             <td colspan="2">
                <!--  <input type="submit" value="Submit"> -->
-                <button onclick="alert('ok dankjewel uw wordt verwacht')">Submit</button>
+                <button onclick="alert('ok dankjewel uw wordt verwacht')">Ja, ik durf de tocht aan!</button>
             </td>
         </tr>
     </table>
