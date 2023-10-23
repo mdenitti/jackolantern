@@ -9,3 +9,13 @@ a.navlink {
     background: orange;
     padding: 10px;
 }
+
+td {
+   height: 3em;
+   width: 3em;
+   border: 1px solid white;
+}
+
+td.white {
+    background-color: white;
+}
