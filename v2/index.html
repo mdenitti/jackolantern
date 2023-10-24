@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@100;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
+        div.footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000b3;
+        color:#b5410f;
+        padding: 20px;
+        }
+
+        div.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #cd710fe4;
+        }
+
+        i.fa-solid.fa-ghost {
+            color: chocolate;
+            margin-right: 28px;
+        }
+
+       
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             display: flex;
@@ -35,18 +61,34 @@
             font-family: 'Creepster', cursive;
             font-size: 4rem;
         }
+
+        img.logo {
+            width: 307px;
+        }
+
+
     </style>
 </head>
 <body>
+    <div class="header">
+        <img class="logo" src="images/logo.png" alt="logo">
+    </div>
     <div class="centered-div">
         <div class="inner-div"> <!-- First inner div -->
-            <h1>HalloWeeN</h1>
+            <h1><i class="fa-solid fa-ghost fa-shake"></i>HalloWeeN</h1>
             Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
         </div>
         <div class="inner-div"> <!-- Second inner div -->
-            <h1>HalloWeeN</h1>
+            <h1><i class="fa-solid fa-ghost fa-shake"></i>HalloWeeN</h1>
             Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
         </div>
     </div>
+
+    <div class="footer">
+       HalloWeenWalk TEUT Zonhoven - 2023
+    </div>
+
+    
+    
 </body>
 </html>
