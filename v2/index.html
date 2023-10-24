@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@100;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           /*  vertical height */
+            height: 100vh;
+            margin: 0;
+
+           /*  Background image coveren and no repeaten */
+            background-image: url("images/spookywall.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .centered-div {
+            display: flex; /* Add this line to create a flex container */
+            width: 80%;
+            background-color: lightgray;
+            text-align: center;
+            padding: 20px;
+        }
+        .inner-div {
+            flex: 1; /* Add this to make the divs share available space equally */
+            margin: 10px; /* Optional: Add some margin between the divs */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-div">
+        <div class="inner-div"> <!-- First inner div -->
+            Content in the first div
+        </div>
+        <div class="inner-div"> <!-- Second inner div -->
+            Content in the second div
+        </div>
+    </div>
+</body>
+</html>
