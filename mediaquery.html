@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Menu</title>
+  <style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    /* Menu for large screens (900px+) */
+    @media (min-width: 900px) {
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            margin-right: 10px;
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+
+    /* Hamburger menu for small screens (600px-) */
+    @media (max-width: 600px) {
+        .menu {
+            display: none;
+        }
+
+    }
+
+    /* Replace hamburger menu with regular menu at 600px */
+    @media (min-width: 600px) and (max-width: 900px) {
+        .menu {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Website</h1>
+
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="hamburger">
+    <span class="bar">--</span>
+    <span class="bar">--</span>
+    <span class="bar">--</span>
+  </div>
+
+  <p>This is my website. It is responsive, so it will look good on any device.</p>
+</body>
+</html>
